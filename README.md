@@ -5,7 +5,6 @@ The frontend part of the Task manager project using ReactJS to create a simple t
 Includes:
 
 - ui to view, add, delete and update tasks
-
 - unit tests for form validation
 
 ### Instructions on running the app:

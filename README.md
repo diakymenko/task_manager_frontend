@@ -44,7 +44,7 @@ Includes:
 3. pip install -r requirements.txt
 4. flask run
 
-## Task Manager FrontEnd
+## Task Manager Frontend
 The frontend part of the Task manager project using ReactJS to create a simple task list with an ability to view existing tasks, add new tasks, delete and mark a task as completed.
 
 Includes:

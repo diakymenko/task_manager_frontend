@@ -9,11 +9,12 @@ function Task({
   tasks,
   setTasks,
 }) {
-  const deleteTask = () => {
-    fetch(`http://127.0.0.1:5000/tasks/${id}`, { method: "DELETE" }).then(
-      () => {
-        //   fetchTasks();
 
+  const url = process.env.REACT_APP_TASK_API_URL;
+
+  const deleteTask = () => {
+    fetch(`${url}/tasks/${id}`, { method: "DELETE" }).then(
+      () => {
         const existingTasks = [...tasks];
         const newTasks = existingTasks.filter((task) => task.id !== id);
         setTasks(newTasks);
@@ -21,8 +22,8 @@ function Task({
     );
   };
 
-  const completeTask = () => {
-    fetch(`http://127.0.0.1:5000/tasks/${id}`, {
+  const flipTask = () => {
+    fetch(`${url}/tasks/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         completed: !completed,
@@ -47,7 +48,7 @@ function Task({
         <div className="form-check">
           <input
             className="form-check-input"
-            onChange={completeTask}
+            onChange={flipTask}
             type="checkbox"
             checked={isChecked}
             id={id}

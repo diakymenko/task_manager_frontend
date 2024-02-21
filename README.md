@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Northspyre Take-Home Project for React & Flask Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Welcome!
 
-## Available Scripts
+Thank you for participating in our engineering hiring process! This take-home test is designed to assess your practical skills in developing web applications using React and Flask. You are encouraged to use all of your preferred coding tools including and especially ChatGPT or any other AI-based coding assistants you like.
 
-In the project directory, you can run:
+## Objective
+Your task is to create a simple web application that features a React frontend and a Flask backend. The application will be a "Task Manager" where users can add, delete, and mark tasks as completed. You are free to modify any code already provided and add any dependencies you need. Creativity is encouraged. The only requirements are that the application should have a React frontend and a Flask backend using the REST architecture, and it should be able to perform the basic CRUD operations for tasks. Please be sure to include instructions for running your application in your submission.
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Please extend the provided code to meet the following requirements:
+* Display a list of tasks.
+* Add a new task.
+* Delete a task.
+* Mark a task as completed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You are free to modify the code in any way you like, but ensure your final result is a functional web application that meets the above requirements.
 
-### `npm test`
+#### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Framework: React
+* Styling: Feel free to use plain CSS for stlying, ideally we recommend using Bootstrap which is already in the dependencies.
 
-### `npm run build`
+#### Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Framework: Flask
+* Database: Use SQLite for simplicity. The database should have at least one table named tasks with columns for id, title, description, and completed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_________________________________________________________________________________________________________________________________
+## Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###### Task Manager Backend
+The backend part of the Task manager project using Python Flask to create a simple task list with an ability to view existing tasks, add new tasks, delete and mark a task as completed. 
 
-### `npm run eject`
+Includes:
+- core functionality to view, add, delete and update tasks
+- validation for POST, PATCH and DELETE requests
+- intergation tests for endpoints and error messages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Instructions on running the app:
+1. python -m venv venv
+2. source venv/bin/activate
+3. pip install -r requirements.txt
+4. flask run
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###### Task Manager FrontEnd
+The frontend part of the Task manager project using ReactJS to create a simple task list with an ability to view existing tasks, add new tasks, delete and mark a task as completed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Includes:
+- ux to view, add, delete and update tasks
+- unit tests for form validation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Instructions on running the app:
+Depends on a backend part of the app: https://github.com/diakymenko/task_manager_backend
+1. Set environment variable REACT_APP_TASK_API_URL, default is http://127.0.0.1:5000
+2. npm start
+____________________________________________________________________________________________________________________________
+#### Development
+Implement the required features as described above.
 
-## Learn More
+#### Documentation
+Update this README to include instructions on how to set up and run your application.
+Briefly describe your application's architecture and the decisions you made during development.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Submission
+Please submit your completed test through coderbytes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Evaluation Criteria
 
-### Code Splitting
+* Functionality: The application works as described.
+* Code Quality: Clean, modular, and well-organized code.
+* Design: A user-friendly interface and a sensible API design.
+* Documentation: Clear instructions on setting up and running your application, along with a concise explanation of your architecture and choices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+*Bonus Points*
 
-### Analyzing the Bundle Size
+* Implement authentication for users to manage their tasks.
+* Deploy the application to a cloud service (Heroku, AWS, etc.).
+* Write unit tests for both frontend and backend.
+* Implement additional features that you think would be useful to have in a task manager application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Good luck, and we're looking forward to your submission!

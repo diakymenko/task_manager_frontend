@@ -5,8 +5,11 @@ import TaskForm from "./TaskForm.js";
 function Tasks() {
   const [tasks, setTasks] = useState([]);
 
+  const url = process.env.REACT_APP_TASK_API_URL;
+  console.log(url);
+
   const fetchTasks = () => {
-    fetch("http://127.0.0.1:5000/tasks")
+    fetch(`${url}/tasks`)
       .then((response) => response.json())
       .then((data) => setTasks(data));
   };
@@ -14,7 +17,7 @@ function Tasks() {
   useEffect(fetchTasks, []);
 
   const addTask = (taskInfo) => {
-    fetch(`http://localhost:5000/tasks/`, {
+    fetch(`${url}/tasks/`, {
       method: "POST",
       body: JSON.stringify({
         description: taskInfo.description,

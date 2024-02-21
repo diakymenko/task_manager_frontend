@@ -7,7 +7,6 @@ describe('TaskForm component', () => {
     const addTaskMock = jest.fn();
     render(<TaskForm addTask={addTaskMock} />);
 
-    // Fill form fields
     fireEvent.change(screen.getByLabelText('Title'), { target: { value: 'Test Title' } });
     fireEvent.change(screen.getByLabelText('Description'), { target: { value: 'Test Description' } });
 

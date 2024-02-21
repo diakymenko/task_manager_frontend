@@ -1,0 +1,23 @@
+.description_container {
+   padding-left: 20px;
+}
+
+/* .title_container {
+    display: grid;
+}  */
+
+.container {
+    display: inline-flex;
+}
+
+.error_msg {
+    color: red;
+}
+
+.btn_container {
+    padding-left: 20px;
+}
+
+.form_text {
+    padding-right: 10px;
+}

@@ -1,9 +1,3 @@
-# Northspyre Take-Home Project for React & Flask Web Application
-
-## Welcome!
-
-Thank you for participating in our engineering hiring process! This take-home test is designed to assess your practical skills in developing web applications using React and Flask. You are encouraged to use all of your preferred coding tools including and especially ChatGPT or any other AI-based coding assistants you like.
-
 ## Objective
 Your task is to create a simple web application that features a React frontend and a Flask backend. The application will be a "Task Manager" where users can add, delete, and mark tasks as completed. You are free to modify any code already provided and add any dependencies you need. Creativity is encouraged. The only requirements are that the application should have a React frontend and a Flask backend using the REST architecture, and it should be able to perform the basic CRUD operations for tasks. Please be sure to include instructions for running your application in your submission.
 
@@ -79,6 +73,3 @@ Please submit your completed test through coderbytes
 * Deploy the application to a cloud service (Heroku, AWS, etc.).
 * Write unit tests for both frontend and backend.
 * Implement additional features that you think would be useful to have in a task manager application.
-
-
-## Good luck, and we're looking forward to your submission!
